@@ -1,0 +1,48 @@
+# --- The Archive (Experimental & Sensitive Bloat) ---
+archive/
+
+# --- Python Bloat ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+env/
+venv/
+build/
+dist/
+*.egg-info/
+
+# --- Project Specific Bloat (Large Files/Generated Assets) ---
+# Ignore ALL CSVs and logs globally
+*.csv
+*.log
+!data/README.md
+
+# Ignore generated figures and visualizations
+figures/
+images/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Ignore model weights and saved states
+*.pth
+*.h5
+*.weights
+models/__pycache__/
+
+# Ignore specific prediction outputs
+predictions/
+
+# --- System/IDE Bloat ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# --- Sensitive Info ---
+.env
+auth.json
+secrets.py
